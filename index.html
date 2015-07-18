@@ -20,11 +20,9 @@ layout:  default
     </tr>
   </thead>
   <tbody>
-  {% for entry in site.data.template %}
+  {% for entry in site.data.templates %}
     <tr>
-      <td>{{ vuln.id }}</td>
       <td><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.name }}</a></td>
-      <td>{{ site.time }}</td>
       <td><a href="https://github.com/{{ entry.author }}">{{ entry.author }}</a></td>
     </tr>
   {% endfor %}
