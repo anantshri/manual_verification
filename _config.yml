@@ -6,5 +6,5 @@ author:
 baseurl:  //anantshri.github.io/manual_verification
 projectname: manual_verification
 markdown:     kramdown
-highlighter:    true
+highlighter:    pygments
 future:      true
