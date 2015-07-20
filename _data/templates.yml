@@ -1,4 +1,3 @@
 - name: "MS 15-034 : HTTP.sys Remote Code Execution Vulnerability"
   url: /templates/ms15-034
   author: "anantshri"
-  cve: 2015-01635
