@@ -1,9 +1,0 @@
----
-layout: verify
----
-
-
-Hello
------
-
-Hi
