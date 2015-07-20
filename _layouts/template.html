@@ -31,10 +31,12 @@
     <div class="panel-body" markdown="1">
 {{ content }}
     <div class="references">
-      <h3>References</h3>
+      <h3>Vulnerability Identifications</h3>
       <div id="CVE">CVE : {{ page.CVE }}</div>
       <div id="NESSUS">NESSUS : {{ page.Nessus }}</div>
       <div id="BUGTrack">BUGTrack : {{ page.Bugtrack }}</div>
+      <div id="OSVDB">OSVDB : {{ page.Osvdb }}</div>
+      <h3>Reference Links</h3>
     <ul>  
       {% for entry in page.links %}
       <li>{{ entry }}</li>
