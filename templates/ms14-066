@@ -1,0 +1,39 @@
+---
+layout: template
+title: MS14-066: Vulnerability in Schannel Could Allow Remote Code Execution
+CVE: 2014-6321
+Nessus: 
+Bugtrack: 
+links:
+- http://www.rapid7.com/db/vulnerabilities/WINDOWS-HOTFIX-MS14-066
+- https://technet.microsoft.com/library/security/ms14-066
+---
+
+MS 14-066
+---------------
+The vulnerability could allow remote code execution if an attacker sends specially crafted packets to a Windows server. 
+
+Affected Systems
+----------------
+
+All versions of windows
+
+* Windows Vista/ 7/ 8 / 8.1
+* Windows 2003 / 2008 / 2012 Server
+
+Manual Verification Tests
+-------------------------
+
+According to https://technet.microsoft.com/library/security/ms14-066 the following ciphers were added with the patch:
+
+* TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+* TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+* TLS_RSA_WITH_AES_256_GCM_SHA384
+* TLS_RSA_WITH_AES_128_GCM_SHA256
+
+
+* Command to be used
+
+
+Ready made script available at https://github.com/anexia-it/winshock-test/blob/master/winshock_test.sh
+
