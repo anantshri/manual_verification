@@ -1,3 +1,5 @@
 .DS_Store
 .travisdeploykey
 .travisdeploykey.pub
+.key
+.key.pub
