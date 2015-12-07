@@ -7,7 +7,7 @@ install:
   - gem install html-proofer
 before_script:
   # Replace with the line that travis encrypt-file printed out
-  -  openssl aes-256-cbc -K $encrypted_e9678b4a945e_key -iv $encrypted_e9678b4a945e_iv -in .travisdeploykey.enc -out .travisdeploykey -d
+  - openssl aes-256-cbc -K $encrypted_e9678b4a945e_key -iv $encrypted_e9678b4a945e_iv -in .travisdeploykey.enc -out .travisdeploykey -d
   - chmod go-rwx .travisdeploykey
   - eval `ssh-agent -s`
   - ssh-add .travisdeploykey
@@ -21,6 +21,7 @@ script:
   - bundle install
   - bundle exec jekyll build # Or jekyll build or whatever command you use to generate your site
   - git checkout # Replace master with gh-pages if applicable
+  - git add Gemfile.lock
   - git add -f _site/ # Replace _site/ with the build's output directory
   - 'git commit -m "${COMMIT_MESSAGE}"'
   - git filter-branch -f --subdirectory-filter _site/ # Again, replace _site/
