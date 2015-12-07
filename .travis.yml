@@ -18,7 +18,8 @@ before_script:
 
 script:
   - set -e
-  - jekyll build # Or jekyll build or whatever command you use to generate your site
+  - bundle install
+  - bundle exec jekyll build # Or jekyll build or whatever command you use to generate your site
   - git checkout -b gh-pages # Replace master with gh-pages if applicable
   - git add -f _site/ # Replace _site/ with the build's output directory
   - 'git commit -m "${COMMIT_MESSAGE}"'
