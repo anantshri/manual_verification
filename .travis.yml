@@ -32,3 +32,6 @@ branches:
   only:
     - gh-pages
 
+env:
+  global:
+  - REPO="git@github.com:anantshri/manual_verification.git"
