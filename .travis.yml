@@ -13,20 +13,19 @@ before_script:
   - ssh-add .travisdeploykey
   - git config user.name "Travis-CI"
   - git config user.email "noreply@travis-ci.org"
-  - COMMIT_MESSAGE="Publishing site on `date "+%Y-%m-%d %H:%M:%S"` from
-    `git log -n 1 --format='commit %h - %s'`"
+  - COMMIT_MESSAGE="Publishing site on `date "+%Y-%m-%d %H:%M:%S"` from `git log -n 1 --format='commit %h - %s'`"
 
 script:
   - set -e
   - bundle install
   - bundle exec jekyll build # Or jekyll build or whatever command you use to generate your site
-  - git checkout # Replace master with gh-pages if applicable
+  - git checkout gh-pages # Replace master with gh-pages if applicable
   - git add Gemfile.lock
   - git add -f _site/ # Replace _site/ with the build's output directory
   - 'git commit -m "${COMMIT_MESSAGE}"'
   - git filter-branch -f --subdirectory-filter _site/ # Again, replace _site/
   # Obviously, replace with your repo's SSH URL and the appropriate branch
-  - git push -f ssh://github.com/anantshri/manual_verification
+  - git push -f ssh://github.com/anantshri/manual_verification gh-pages:gh-pages
 
 branches:
   only:
