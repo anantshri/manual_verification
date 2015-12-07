@@ -1,0 +1,28 @@
+<h2 id="ms-14-066">MS 14-066</h2>
+<p>The vulnerability could allow remote code execution if an attacker sends specially crafted packets to a Windows server.</p>
+
+<h2 id="affected-systems">Affected Systems</h2>
+
+<p>All versions of windows</p>
+
+<ul>
+  <li>Windows Vista/ 7/ 8 / 8.1</li>
+  <li>Windows 2003 / 2008 / 2012 Server</li>
+</ul>
+
+<h2 id="manual-verification-tests">Manual Verification Tests</h2>
+
+<p>According to https://technet.microsoft.com/library/security/ms14-066 the following ciphers were added with the patch:</p>
+
+<ul>
+  <li>TLS_DHE_RSA_WITH_AES_256_GCM_SHA384</li>
+  <li>TLS_DHE_RSA_WITH_AES_128_GCM_SHA256</li>
+  <li>TLS_RSA_WITH_AES_256_GCM_SHA384</li>
+  <li>
+    <p>TLS_RSA_WITH_AES_128_GCM_SHA256</p>
+  </li>
+  <li>Command to be used</li>
+</ul>
+
+<p>Ready made script available at https://github.com/anexia-it/winshock-test/blob/master/winshock_test.sh</p>
+
