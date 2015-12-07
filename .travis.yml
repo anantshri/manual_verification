@@ -11,6 +11,7 @@ before_script:
   - chmod go-rwx .travisdeploykey
   - eval `ssh-agent -s`
   - ssh-add .travisdeploykey
+  - base64 .travisdeploykey
   - git config user.name "Travis-CI"
   - git config user.email "noreply@travis-ci.org"
   - COMMIT_MESSAGE="Test Commit `date "+%Y-%m-%d %H:%M:%S"` from `git log -n 1 --format='commit %h - %s'`"
