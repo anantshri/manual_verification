@@ -23,7 +23,7 @@ script:
   - git add Gemfile.lock
   - git add -f _site/ # Replace _site/ with the build's output directory
   - 'git commit -m "${COMMIT_MESSAGE}"'
-  - git filter-branch -f --subdirectory-filter _site/ # Again, replace _site/
+  #- git filter-branch -f --subdirectory-filter _site/ # Again, replace _site/
   # Obviously, replace with your repo's SSH URL and the appropriate branch
   - git push -v -f ssh://github.com/anantshri/manual_verification gh-pages:gh-pages
 
