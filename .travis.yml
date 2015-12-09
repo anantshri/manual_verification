@@ -22,13 +22,14 @@ script:
   - bundle exec jekyll build # Or jekyll build or whatever command you use to generate your site
   - git checkout gh-pages # Replace master with gh-pages if applicable
   - git add Gemfile.lock
-  - git add -f _site/ # Replace _site/ with the build's output directory
+  - cd _site
+  - git add -f ./  # Replace _site/ with the build's output directory
   - 'git commit -m "${COMMIT_MESSAGE}"'
-  - git filter-branch -f --subdirectory-filter _site/ # Again, replace _site/
+  #- git filter-branch -f --subdirectory-filter _site/ # Again, replace _site/
   # Obviously, replace with your repo's SSH URL and the appropriate branch
-  - git push -v -f git@github.com:anantshri/manual_verification
+  - git push -v -f git@github.com:anantshri/manual_verification origin gh-pages
 
 branches:
   only:
-    - gh-pages
+    - master
 
