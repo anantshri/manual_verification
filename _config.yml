@@ -3,6 +3,8 @@ tagline:      'Curated Collection of manual verification methods for various vul
 author:
   name:       'Anant Shrivastava'
   email:      'anant@anantshri.info'
+  twitter:      https://twitter.com/anantshri
+  linkedin:     https://www.linkedin.com/in/anantshri
 baseurl:  //anantshri.github.io/manual_verification
 projectname: manual_verification
 markdown:     kramdown
