@@ -27,7 +27,7 @@ update: install
 .PHONY: build
 build: install
 	bundle exec jekyll build --quiet
-	#echo ${URL} > _site/CNAME
+	echo ${URL} > _site/CNAME
 
 # CHECK ########################################################################
 
