@@ -10,3 +10,10 @@ projectname: manual_verification
 markdown:     kramdown
 highlighter:    pygments
 future:      true
+
+exclude:
+  - README.md
+  - Makefile
+  - Gemfile*
+  - vendor/
+  - info.sublime-*
