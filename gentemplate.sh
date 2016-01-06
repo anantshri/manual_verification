@@ -7,7 +7,7 @@ do
 	if [ ! -z "$title" ]
 	then
 		echo '- name: "'$title'"'
-		echo '  url: '$url
+		echo '  url: /'$url
 		echo '  author: '$author
 	fi
 done
