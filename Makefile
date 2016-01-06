@@ -26,6 +26,7 @@ update: install
 
 .PHONY: build
 build: install
+	mkdir ./_data/
 	sh gentemplate.sh > ./_data/templates.yml
 	bundle exec jekyll build --quiet
 	echo ${URL} > _site/CNAME
