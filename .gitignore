@@ -31,7 +31,7 @@ Thumbs.db
 nbproject
 *.sublime-workspace
 .idea
-
+templates.yml
 # Komodo
 *.komodoproject
 .komodotools

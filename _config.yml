@@ -16,4 +16,5 @@ exclude:
   - Makefile
   - Gemfile*
   - vendor/
+  - gentemplate.sh
   - info.sublime-*
