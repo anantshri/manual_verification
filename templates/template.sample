@@ -1,6 +1,7 @@
 ---
 layout: template
 title: title
+author: github_username
 CVE: YEAR-NUMBER
 Nessus: NESSUSID
 Bugtrack: BUGTRACKID
