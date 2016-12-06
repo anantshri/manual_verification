@@ -2,7 +2,7 @@
 layout: template
 title: CISCO ASA 20160115 - Cisco ASA AnyConnect Client Authentication Attempt Handling Information Disclosure 
 CVE: CVE-2016-1295
-Nessus: 82771
+Nessus: 91963
 Bugtrack: 
 author: anantshri
 links:
