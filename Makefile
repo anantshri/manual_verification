@@ -37,7 +37,7 @@ build: install
 .PHONY: check
 check: build
 	echo "Checking Build"
-	bundle exec htmlproof _site --only-4xx
+	bundle exec htmlproof _site --only-4xx --url-ignore "/anantshri.github.io/"
 
 # RUN ##########################################################################
 
